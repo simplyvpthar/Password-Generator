@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-light bg-primary" style="background-color: rgb(163, 162, 161)">
+        <a class="navbar-brand" href="#">Vanh T's Password Generator</a>
+    </nav>
+    <div class="container">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 mx-auto">
+
+                    <div class="content">
+                        <h4>Random Password Generator</h4>
+                        <br />
+                        <p>
+                            Please answer the questions to generate a strong random password generator. Remember a
+                            strong password includes the number of characters, numbers and/or symbols.
+                        </p>
+
+                        How many characters? <input type="number" id="charNum" value="12" min="8" max="80" /><br />
+                        Number: <input type="checkbox" id="num" />
+                        Symbol: <input type="checkbox" id="sym" /><br />
+                        <button class="btn" id="submit">Click to get a new password!</button><br />
+                        Your Password: <input type="text" id="yourPw" size="80" />
+                        <br />
+                        <button class="btn" onclick="copyPassword()">Copy to Clipboard</button>
+                        <div id="length"></div>
+                    </div>
+                    <div class="previous_passwords"></div>
+                    <b>Previously Generated Passwords</b>
+                    <br />
+                    <div id="lastNums"></div>
+                </div>
+
+            </div>
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>

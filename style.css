@@ -1,0 +1,44 @@
+.navbar {
+    color:  white;
+    font-size: 40px;
+}
+
+.content {
+    margin-top:  10px;
+    margin-bottom:  10px;
+    background-color: lightgray;
+    padding:  20px;
+    width:  100%;
+    color:  white;
+}
+
+#display{
+    width:  100%;
+}
+
+#slider{
+    width:  100%;
+}
+
+#length{
+    display:  inline-block;
+    width:  100px;
+}
+
+.previous_passwords{
+    margin-bottom: 20px;
+}
+
+.btn {
+    grid-column:  span 2;
+    background-color:  transparent;
+    border:  2px solid white;
+    color:  white;
+    padding:  .5rem 1rem;
+    font-weight: bold;
+    cursor:  pointer;
+    border-radius:  1rem;
+}
+.btn:hover {
+    background-color: #FFFFFF33;
+}
